@@ -1,0 +1,16 @@
+
+                      <ul class="list-group">
+                              <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Your list city
+                              </li>
+                              <li *ngFor="let x of cities; let i = index" class="list-group-item d-flex justify-content-between align-items-center">
+                                <span style="cursor: pointer;" (click)="onClickCity($event.target.innerText)">{{x}}</span>
+                                <span  class="badge badge-primary badge-pill" (click)="onClickRemove(i)">x</span>
+                              </li>
+                              <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <input class="form-control"   placeholder="Add new city..." #newCity>
+                                <span (click)="clickAddCity(newCity)" id="addButton"  class="badge badge-primary badge-pill ">+</span>
+                              </li>
+                            </ul>
+                            <span class="alert-danger">{{errortext}}</span>
+              
