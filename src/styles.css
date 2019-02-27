@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+/*  Styling ui */
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Amita');
+/* reset those elements */
+*{
+	box-sizing: border-box;
+	outline: none;
+}
+html,body, h1, h3 {
+    margin:0;
+    padding:0;
+}
+
+.icon{width: 90%;}
+.temp{padding-top: 10%; font-size: 5em; font-weight: bold;}
+.bg-weather{font-weight: bold; padding-top: 0px; border:1px solid #ccc; border-radius: 3px;}
+.bg-weather h3{margin-top: 0px;}
+/* input style */
+input{
+	width: 60%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px 10px;
+	border: none;
+}
+/* rewritting boostrap's classes style */
+.badge{cursor: pointer;}
+.form-control{margin-right: 10px;}
+.list-group-item:first-child, .list-group-item:last-child{background-color:#f1f1f1; font-weight: bold; font-size: 1.3em;}
+/* body style */
+body{
+	background-image: url('./images/bg.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+/* header style */
+header{
+	padding: 3% 0%;
+	text-align: center;
+	color: white;
+    text-rendering: optimizelegibility;
+    font-weight: 700;
+	
+}
+header h1{
+	font-family: 'Amita', cursive;
+	font-size: 3em;
+}
+header h3{
+	font-weight: 700;
+	font-size: 1.5em;
+}
+/* footer style */
+#footer{
+	margin: 100px 0px;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-rendering: optimizelegibility;
+
+}
+#footer a{
+	color: white;
+	text-decoration: none;
+}
+#addButton{
+	border-radius: 0px;
+    padding: 8px;
+	font-size: 1em; 
+}
+/* Media queries for smoll devices */
+@media screen and (max-width:768px){
+	html,body{font-size: 100%;}
+	input{width: 90%;}
+	.bg-weather{
+		margin-top: 20px;
+	}
+}
