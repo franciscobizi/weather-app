@@ -1,42 +1,45 @@
-              <div *ngIf="(w | json) != '{}'">
-                <h3>Current Weather in {{w.name}}, {{w.region}}, {{w.country}}</h3>
-                <br>
-                <div class="row">
-                  <div class="col-md-6"><img src="{{w.icon}}" class="icon"/></div>
-                  <div class="col-md-6 temp">{{w.temp}}ºC</div>
-                </div>
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <th scope="col">Local time </th><th scope="col">Longitude</th><th scope="col">Latitude</th><th scope="col">Timezone</th>
-                          </tr>
-                      <tr>
-                        <td>{{w.ltime}}</td><td>{{w.lon}}</td><td>{{w.lat}} </td><td>{{w.tz}}</td>
-                      </tr>
-                    </tbody>
-                </table>
-                <h3>{{w.text}}</h3>
-                <div class="table-responsive">
-                <table class="table">
-                    <tbody>
-                      <tr>
-                        <td>Wind</td>
-                        <td>Precipitation</td>
-                        <td>Cloud</td>
-                        <td>Humidity</td>
-                        <td>Pressure</td>
-                      </tr>
-                      <tr>
-                          <td>{{w.wind}} mph</td>
-                          <td>{{w.precip}} in</td>
-                          <td>{{w.cloud}} %</td>
-                          <td>{{w.humidity}} %</td>
-                          <td>{{w.pressure}} in</td>
-                    </tr>
-                          
-                    </tbody>
-                </table>
-              </div>
-              </div>
-              
-            
+<div *ngIf="(w | json) != '{}'">
+  <h3>Current Weather in {{w.name}}, {{w.region}}, {{w.country}}</h3>
+  <br>
+  <div class="row">
+      <div class="col-md-6"><img src="{{w.icon}}" class="icon"/></div>
+      <div class="col-md-6 temp">{{w.temp}}ºC</div>
+  </div>
+  <table class="table">
+      <tbody>
+          <tr>
+              <th scope="col">Local time </th>
+              <th scope="col">Longitude</th>
+              <th scope="col">Latitude</th>
+              <th scope="col">Timezone</th>
+          </tr>
+          <tr>
+              <td>{{w.ltime}}</td>
+              <td>{{w.lon}}</td>
+              <td>{{w.lat}} </td>
+              <td>{{w.tz}}</td>
+          </tr>
+      </tbody>
+  </table>
+  <h3>{{w.text}}</h3>
+  <div class="table-responsive">
+      <table class="table">
+          <tbody>
+              <tr>
+                  <td>Wind</td>
+                  <td>Precipitation</td>
+                  <td>Cloud</td>
+                  <td>Humidity</td>
+                  <td>Pressure</td>
+              </tr>
+              <tr>
+                  <td>{{w.wind}} mph</td>
+                  <td>{{w.precip}} in</td>
+                  <td>{{w.cloud}} %</td>
+                  <td>{{w.humidity}} %</td>
+                  <td>{{w.pressure}} in</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>

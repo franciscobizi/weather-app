@@ -1,10 +1,6 @@
 import { 
   Component,
-  Input,  
-  EventEmitter,  
-  Output,
-  OnInit,
-  Injectable
+  OnInit
 } from '@angular/core';
 import { WeatherService} from '../../shared/weather.service';
 import { WeatherModel} from '../../shared/model';
@@ -22,7 +18,7 @@ export class WeatherInfoComponent implements OnInit{
    * Handling success results
    * @param data 
    */
-  handlerSuccess(data){
+  handlerSuccess(data:any){
       // Location
       this.w.name = data.name;
       this.w.region = data.region;

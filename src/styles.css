@@ -14,8 +14,8 @@ html,body, h1, h3 {
 }
 
 .icon{width: 90%;}
-.temp{padding-top: 10%; font-size: 5em; font-weight: bold;}
-.bg-weather{font-weight: bold; padding-top: 0px; border:1px solid #ccc; border-radius: 3px;}
+.temp{padding-top: 10%; font-size: 5em; font-weight: bold; text-align: center;}
+.bg-weather{font-weight: bold; padding-top: 0px;}
 .bg-weather h3{margin-top: 0px;}
 /* input style */
 input{
